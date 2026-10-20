@@ -1,0 +1,227 @@
+.container {
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 8px;
+}
+
+.content {
+  display: flex;
+  min-height: 400px;
+}
+
+.usersPanel {
+  background-color: #f3ea0c;
+  width: 25%;
+  padding: 8px;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.usersPanel h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.usersList {
+  list-style-type: none;
+  padding-left: 8px;
+  margin: 0;
+}
+
+.usersList li {
+  margin-bottom: 4px;
+}
+
+.userButton {
+  background-color: transparent;
+  border: 1px solid #999;
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.userButton:hover {
+  background-color: #e8e000;
+}
+
+.userButton.selected {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+.channelsPanel {
+  background-color: azure;
+  width: 25%;
+  padding: 8px;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.channelsPanel h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.channelsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.leaveButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.leaveButton:hover:not(:disabled) {
+  background-color: #da190b;
+}
+
+.leaveButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.createChannelForm {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.createChannelForm input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.createChannelForm button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.createChannelForm button:hover {
+  background-color: #0b7dda;
+}
+
+.channelsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.channelItem {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.channelButton {
+  flex: 1;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.channelButton:hover {
+  background-color: #0b7dda;
+}
+
+.channelButton.selected {
+  background-color: #1565c0;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.deleteButton:hover {
+  background-color: #da190b;
+}
+
+.conversationPanel {
+  background-color: cadetblue;
+  width: 50%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.conversationPanel h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.recipient {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.messageForm {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.messageForm input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.messageForm button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.messageForm button:hover {
+  background-color: #0b7dda;
+}
+
+.messagesList {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #999;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.message {
+  margin: 0 0 6px 0;
+  word-break: break-word;
+}

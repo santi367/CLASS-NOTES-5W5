@@ -1,0 +1,9 @@
+node_modules/
+.next/
+bin/
+obj/
+.vs/
+*.user
+*.suo
+.env*.local
+.git-backup/
